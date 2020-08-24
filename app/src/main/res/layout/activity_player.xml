@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout.FillWidthHeight.Vertical"
+    android:background="@color/background_color"
+    android:gravity="center_horizontal">
+
+    <include layout="@layout/layout_header" />
+
+    <LinearLayout
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_margin="@dimen/dimen_2x">
+
+        <View
+            android:id="@+id/viewIndicatorList"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_width="@dimen/dimen_x2x"
+            android:layout_height="@dimen/dimen_05x"
+            android:background="@color/color_selector" />
+
+        <View
+            android:id="@+id/viewIndicatorThumb"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_width="@dimen/dimen_x2x"
+            android:layout_height="@dimen/dimen_05x"
+            android:layout_marginLeft="@dimen/dimen_x1x"
+            android:background="@color/color_selector" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        style="@style/Layout.Weight.HeightFillWidth" />
+
+    <LinearLayout
+        style="@style/Layout.FillWidth.Vertical"
+        android:layout_margin="@dimen/dimen_1x">
+
+        <SeekBar
+            android:id="@+id/seekBarLength"
+            style="@style/Layout.Weight.Width"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/black_4" />
+
+        <RelativeLayout
+            style="@style/Layout.FillWidth"
+            android:layout_marginTop="@dimen/dimen_1x">
+
+            <TextView
+                android:id="@+id/lblTimeCurrent"
+                style="@style/Text.WrapWidth"
+                android:text="@string/timeStart"
+                android:textColor="@color/black_4" />
+
+            <TextView
+                android:id="@+id/lblTimeLength"
+                style="@style/Text.WrapWidth"
+                android:layout_alignParentRight="true"
+                android:text="@string/timeStart"
+                android:textColor="@color/black_4" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_7x"
+        android:layout_marginBottom="@dimen/dimen_1x">
+
+        <ImageView
+            android:id="@+id/btnShuffle"
+           style="@style/style_btn_play"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_x2x"
+            android:background="@drawable/btn_shuffle" />
+
+        <ImageView
+            android:id="@+id/btnBackward"
+            style="@style/style_btn_player"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnPlayMusic"
+            android:background="@drawable/icon_previous_new" />
+
+        <ImageView
+            android:id="@+id/btnPlayMusic"
+            style="@style/style_btn_play"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dimen_x2x"
+            android:layout_marginRight="@dimen/dimen_x2x"
+            android:background="@drawable/ic_pause" />
+
+        <ImageView
+            android:id="@+id/btnForward"
+            style="@style/style_btn_player"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnPlayMusic"
+            android:background="@drawable/icon_next_new" />
+
+        <ImageView
+            android:id="@+id/btnRepeat"
+           style="@style/style_btn_play"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_x2x"
+            android:background="@drawable/btn_repeat" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_7x"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/ivBanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

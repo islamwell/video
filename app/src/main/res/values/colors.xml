@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue_sky">#3498db</color>
+    <color name="divider">#3f4552</color>
+    <color name="blue">#0099cc</color>
+    <color name="cyan">#62c6c7</color>
+    <color name="gray_dark">#3e4a43</color>
+    <color name="green">#239e26</color>
+    <color name="orange">#ffa80c</color>
+    <color name="white">#ffffff</color>
+    <color name="color_toolbar">#4c92b4</color>
+    <color name="background_color">#c8c6c6</color>
+    <color name="black_4">#4d3841</color>
+    <color name="color_selector">#a9a9a9</color>
+    <color name="black">#000000</color>
+    <color name="bg_button">#60c8c6c7</color>
+    <color name="bg_item_song_playing">#b7b6b5</color>
+    <color name="bg_subcategory">#dbdbdb</color>
+</resources>

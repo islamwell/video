@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/Text.Shadow"
+        android:background="@color/black_4"
+        android:layout_width="match_parent"
+        android:text="@string/creatNewPlaylist"
+        android:textSize="@dimen/textsize_xlarge"
+        android:textColor="@color/white"
+        android:padding="@dimen/dimen_2x"/>
+
+    <EditText
+        android:id="@+id/txtPlaylistName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_05x"
+        android:layout_marginLeft="@dimen/dimen_05x"
+        android:layout_marginRight="@dimen/dimen_05x"
+        android:layout_marginTop="@dimen/dimen_2x"
+        android:hint="@string/playlistName"
+        android:inputType="textCapSentences" />
+
+</LinearLayout>

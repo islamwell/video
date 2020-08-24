@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutSong"
+    style="@style/Layout.FillWidth.Vertical" >
+
+    <ImageView
+        android:id="@+id/imgCategoryMusic"
+        android:layout_width="@dimen/dimen_height"
+        android:layout_height="@dimen/dimen_height"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_not_found"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/lblCategotyMusicName"
+        style="@style/Text.Content.DarkerGray"
+        android:layout_marginTop="@dimen/dimen_1x"
+        android:gravity="center_horizontal"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/gray_dark" />
+
+</LinearLayout>

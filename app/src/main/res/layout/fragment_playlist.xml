@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.FillWidthHeight.Vertical">
+
+    <include layout="@layout/layout_header" />
+
+    <com.nurulquran.audio.widget.AutoBgLinearLayout
+        android:id="@+id/layoutCreatNewPlaylist"
+        style="@style/Layout.FillWidth.Vertical"
+        android:layout_margin="@dimen/dimen_1x"
+        android:background="@color/color_selector"
+        android:padding="@dimen/dimen_1x">
+
+        <TextView
+            style="@style/Text.Shadow"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/icon_add_playlist"
+            android:drawablePadding="@dimen/dimen_1x"
+            android:text="@string/creatNewPlaylist"
+            android:textColor="@color/black_4"
+            android:textSize="@dimen/textsize_large" />
+    </com.nurulquran.audio.widget.AutoBgLinearLayout>
+
+    <ListView
+        android:id="@+id/lsvPlaylist"
+        style="@style/ListView"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1px" />
+
+</LinearLayout>

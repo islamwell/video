@@ -1,0 +1,57 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.nurulquran.audio"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 5
+        versionName "1.1.5"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        debug {
+            minifyEnabled false
+        }
+    }
+}
+repositories {
+    maven {
+        url "https://mint.splunk.com/gradle/"
+    }
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+dependencies {
+    compile files('libs/android-query.0.26.7.jar')
+    compile files('libs/httpmime-4.1.1.jar')
+    compile files('libs/org.apache.http.legacy.jar')
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.google.android.gms:play-services:8.3.0'
+    compile 'com.google.android.gms:play-services-analytics:8.3.0'
+    compile 'com.splunk.mint:mint:5.0.0'
+    compile 'com.google.android.gms:play-services-ads:8.3.0'
+    compile 'com.google.android.gms:play-services-auth:8.3.0'
+    compile 'com.google.android.gms:play-services-gcm:8.3.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.1@aar') {
+        transitive = true;
+    }
+}

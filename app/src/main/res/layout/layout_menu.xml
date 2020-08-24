@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.FillWidthHeight.Vertical"
+    android:background="@drawable/bg_menu">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout style="@style/Layout.FillWidthHeight.Vertical">
+
+            <TextView
+                style="@style/Layout.FillWidth"
+                android:layout_margin="@dimen/dimen_x1x"
+                android:text="@string/menu"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/textsize_large"
+                android:textStyle="bold" />
+
+            <include layout="@layout/divider_item_sliding_menu_major"></include>
+
+            <TextView
+                android:id="@+id/lblTopChart"
+                style="@style/Text.Menu"
+                android:background="@drawable/bg_item_menu_select"
+                android:drawableLeft="@drawable/ic_top_chart"
+                android:text="@string/most_favourite" />
+
+            <include layout="@layout/divider_item_sliding_menu" />
+
+            <include layout="@layout/divider_item_sliding_menu_major" />
+
+            <TextView
+                android:id="@+id/lblAllSong"
+                style="@style/Text.Menu"
+                android:drawableLeft="@drawable/latest"
+                android:text="@string/lastest" />
+
+            <include layout="@layout/divider_item_sliding_menu" />
+
+            <TextView
+                android:id="@+id/lblNominations"
+                style="@style/Text.Menu"
+                android:drawableLeft="@drawable/seriers"
+                android:text="@string/series" />
+
+            <include layout="@layout/divider_item_sliding_menu" />
+
+            <TextView
+                android:id="@+id/lblCategoryMusic"
+                style="@style/Text.Menu"
+                android:drawableLeft="@drawable/categories"
+                android:text="@string/categoryMusic" />
+
+            <include layout="@layout/divider_item_sliding_menu" />
+
+            <TextView
+                android:id="@+id/lblPlaylist"
+                style="@style/Text.Menu"
+                android:drawableLeft="@drawable/icon_playlist"
+                android:text="@string/playlist" />
+
+            <include layout="@layout/divider_item_sliding_menu_major" />
+
+            <TextView
+                android:id="@+id/lblSearch"
+                style="@style/Text.Menu"
+                android:drawableLeft="@drawable/ic_search"
+                android:text="@string/search" />
+
+            <include layout="@layout/divider_item_sliding_menu" />
+
+            <TextView
+                android:id="@+id/lblRadio"
+                style="@style/Text.Menu"
+                android:drawableLeft="@drawable/ic_radio"
+                android:text="@string/radio" />
+
+            <include layout="@layout/divider_item_sliding_menu" />
+
+            <TextView
+                android:id="@+id/lblMultipleYourReward"
+                style="@style/Text.Menu"
+                android:drawableLeft="@drawable/icon_multiple"
+                android:text="@string/multiple_your_reward" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/lblClear"
+                style="@style/Text.Menu"
+                android:drawableLeft="@drawable/icon_download"
+                android:text="@string/clear_cache" />
+
+            <include layout="@layout/divider_item_sliding_menu" />
+
+            <TextView
+                android:id="@+id/lblMyDownLoad"
+                style="@style/Text.Menu"
+                android:drawableLeft="@drawable/icon_download"
+                android:text="@string/my_download" />
+
+            <include layout="@layout/divider_item_sliding_menu" />
+
+            <TextView
+                android:id="@+id/lblAbout"
+                style="@style/Text.Menu"
+                android:drawableLeft="@drawable/ic_about"
+                android:text="@string/about" />
+
+            <include layout="@layout/divider_item_sliding_menu" />
+
+            <TextView
+                android:id="@+id/lblExitApp"
+                style="@style/Text.Menu"
+                android:drawableLeft="@drawable/ic_exit"
+                android:text="@string/exitApp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

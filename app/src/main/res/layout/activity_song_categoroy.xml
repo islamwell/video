@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/layout_header"
+        layout="@layout/layout_header" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRfData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutPlayerFooter"
+        android:layout_below="@+id/layout_header">
+
+        <ListView
+            android:id="@+id/lvListSongCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include
+        android:id="@+id/layoutPlayerFooter"
+        layout="@layout/layout_media_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

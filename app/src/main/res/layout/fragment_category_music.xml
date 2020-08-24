@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutSong"
+    style="@style/Layout.FillWidth.Vertical">
+
+    <include layout="@layout/layout_header" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRfData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_x1x">
+
+        <GridView
+            android:id="@+id/grvCategoryMusic"
+            style="@style/Layout.FillWidthHeight"
+            android:horizontalSpacing="@dimen/dimen_x1x"
+            android:numColumns="2"
+            android:verticalSpacing="@dimen/dimen_x1x" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

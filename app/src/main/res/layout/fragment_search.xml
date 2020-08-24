@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llParent"
+    style="@style/Layout.FillWidthHeight.Vertical"
+    tools:context=".fragment.SearchFragment">
+
+    <include layout="@layout/layout_header" />
+
+    <LinearLayout
+        style="@style/Layout.FillWidth"
+        android:layout_height="@dimen/dimen_7x"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            style="@style/Layout.Weight.Width"
+            android:layout_marginLeft="@dimen/dimen_1x"
+            android:layout_marginRight="@dimen/dimen_1x"
+            android:background="@drawable/bg_tool_search">
+
+            <EditText
+                android:id="@+id/txtKeyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="@dimen/dimen_2x"
+                android:background="@android:color/transparent"
+                android:hint="@string/search"
+                android:imeOptions="actionSearch"
+                android:paddingBottom="@dimen/dimen_1x"
+                android:paddingTop="@dimen/dimen_1x"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dimen_2x"
+                android:background="@drawable/ic_close_black_18dp"
+                android:visibility="visible"
+
+                />
+        </RelativeLayout>
+
+        <com.nurulquran.audio.widget.AutoBgButton
+            android:id="@+id/btnSearch"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="@dimen/dimen_1x"
+            android:background="@drawable/btn_search" />
+    </LinearLayout>
+
+    <RelativeLayout style="@style/Layout.FillWidthHeight">
+
+        <ImageView
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_search"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/ivBackground"
+            style="@style/Layout.FillWidthHeight"
+            android:background="@drawable/bg_white_transparent"
+            android:contentDescription="@string/app_name" />
+
+        <com.nurulquran.audio.widget.pulltorefresh.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/lsvResult"
+            style="@style/ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1px"
+            ptr:ptrMode="both" />
+
+        <TextView
+            android:id="@+id/lblNoResult"
+            style="@style/Text.Title.Bold"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="@string/noFoundMatch"
+            android:textColor="@color/blue_sky"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

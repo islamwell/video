@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutPlayerFooter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heigh_player_main"
+        android:layout_above="@+id/adView"
+        android:background="@drawable/bg_player_footer"
+        android:gravity="center_vertical"
+        android:padding="0dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            style="@style/Layout.Weight.Width"
+            android:layout_marginLeft="@dimen/dimen_1x"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblSongNameFooter"
+                style="@style/Text.Title.White"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="@string/app_name"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/lblArtistFooter"
+                style="@style/Text.Content.White"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textStyle="italic"
+                android:textSize="@dimen/textsize_medium"/>
+        </LinearLayout>
+
+        <com.nurulquran.audio.widget.AutoBgButton
+            android:id="@+id/btnPreviousFooter"
+            android:layout_width="@dimen/dimen_5x"
+            android:layout_height="@dimen/dimen_5x"
+            android:background="@drawable/bg_btn_previous_small" />
+
+        <com.nurulquran.audio.widget.AutoBgButton
+            android:id="@+id/btnPlayFooter"
+            android:layout_width="@dimen/dimen_5x"
+            android:layout_height="@dimen/dimen_5x"
+            android:background="@drawable/bg_btn_pause_small" />
+
+        <com.nurulquran.audio.widget.AutoBgButton
+            android:id="@+id/btnNextFooter"
+            android:layout_width="@dimen/dimen_5x"
+            android:layout_height="@dimen/dimen_5x"
+            android:background="@drawable/bg_btn_next_small" />
+    </LinearLayout>
+</LinearLayout>

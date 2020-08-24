@@ -1,0 +1,53 @@
+<resources>
+    <!--text size-->
+    <dimen name="textszize_small">10sp</dimen>
+    <dimen name="textsize_medium">12sp</dimen>
+    <dimen name="textsize_large">14sp</dimen>
+    <dimen name="textsize_xlarge">16sp</dimen>
+    <dimen name="textsize_xxlarge">18sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="player_thumb_imgSong_layout">136dp</dimen>
+    <dimen name="player_thumb_imgSong">125dp</dimen>
+    <dimen name="margin_normal">10dp</dimen>
+    <!--dimen -->
+    <dimen name="dimen_small">5dp</dimen>
+    <dimen name="dimen_normal">10dp</dimen>
+    <dimen name="dimen_mnormal">12dp</dimen>
+    <dimen name="dimen_xnormal">15dp</dimen>
+    <dimen name="dimen_large">20dp</dimen>
+    <dimen name="dimen_05x">4dp</dimen>
+    <dimen name="dimen_1x">8dp</dimen>
+    <dimen name="dimen_x1x">8dp</dimen>
+    <dimen name="dimen_2x">12dp</dimen>
+    <dimen name="dimen_x2x">16dp</dimen>
+    <dimen name="dimen_3x">20dp</dimen>
+    <dimen name="dimen_x3x">24dp</dimen>
+    <dimen name="dimen_4x">28dp</dimen>
+    <dimen name="dimen_5x">32dp</dimen>
+    <dimen name="dimen_x5x">40dp</dimen>
+    <dimen name="dimen_6x">44dp</dimen>
+    <dimen name="dimen_7x">48dp</dimen>
+    <dimen name="dimen_8x">56dp</dimen>
+    <dimen name="dimen_9x">64dp</dimen>
+    <dimen name="dimen_x9x">72dp</dimen>
+    <dimen name="dimen_10x">76dp</dimen>
+    <!-- Width, height -->
+    <dimen name="dimen_notification_icon">50dp</dimen>
+    <dimen name="dimen_small_icon">20dp</dimen>
+    <dimen name="dimen_xsmall_icon">25dp</dimen>
+    <dimen name="dimen_normal_icon">30dp</dimen>
+    <dimen name="heigh_play_bar">30dp</dimen>
+    <!--dimen image about-->
+    <dimen name="dimen_logo_about">150dp</dimen>
+    <!--dimen divider item menu-->
+    <dimen name="dimen_item_divider">1px</dimen>
+    <dimen name="dimen_item_divider_major">2dp</dimen>
+    <!--main-->
+<dimen name="heigh_player_main">60dp</dimen>
+    <!--item category-->
+    <dimen name="dimen_height">120dp</dimen>
+    <dimen name="line_space_text">15dp</dimen>
+    <!--btn player-->
+    <dimen name="dimen_btn_player">24dp</dimen>
+    <dimen name="dimen_btn_play">32dp</dimen>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Key Server-->
+    <string name="app_name">NurulQuran Audio</string>
+    <string name="server_domain">http://nqapp.nurulquran.com/</string>
+
+    <!--Key admob, google-->
+    <string name="key_admob">ca-app-pub-3940256099942544/2934735716</string>
+    <string name="key_admob_interstitial">ca-app-pub-3940256099942544/1033173712</string>
+</resources>

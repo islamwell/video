@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout.FillWidthHeight.Vertical"
+    tools:context=".fragment.SettingsFragment">
+
+    <include layout="@layout/layout_header" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_about" />
+
+            <TextView
+                style="@style/style_textview"
+                android:lineSpacingExtra="@dimen/line_space_text"
+                android:text="@string/title_about"
+                android:textSize="@dimen/textsize_xxlarge"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/style_textview"
+                android:lineSpacingExtra="@dimen/line_space_text"
+                android:text="@string/content_1" />
+
+            <TextView
+                style="@style/style_textview"
+                android:lineSpacingExtra="@dimen/line_space_text"
+                android:text="@string/content_2"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/style_textview"
+                android:lineSpacingExtra="@dimen/line_space_text"
+                android:text="@string/content_3" />
+
+            <TextView
+                android:id="@+id/tvlink1"
+                style="@style/style_textview"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/line_space_text"
+                android:background="@drawable/textview_border"
+                android:text="@string/link_1"
+                android:textColor="@color/black_4"
+                android:textSize="@dimen/textsize_xxlarge" />
+
+            <TextView
+                android:id="@+id/tvLink2"
+                style="@style/style_textview"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dimen_2x"
+                android:background="@color/bg_subcategory"
+                android:text="@string/link_2"
+                android:textColor="@color/black_4"
+                android:textSize="@dimen/textsize_xxlarge" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

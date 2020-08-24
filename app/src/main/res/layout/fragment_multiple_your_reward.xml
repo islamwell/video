@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/layout_header" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_multiple"
+        android:layout_marginTop="@dimen/dimen_1x"/>
+    <TextView
+        style="@style/style_textview"
+        android:text="@string/multiple_title"
+        android:textSize="@dimen/textsize_xxlarge"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        style="@style/style_textview"
+        android:text="@string/multiple_content_p2"
+        android:lineSpacingExtra="@dimen/line_space_text"
+
+       />
+    <TextView
+        style="@style/style_textview"
+        android:text="@string/multiple_content_p3"
+        android:textStyle="bold"
+       android:lineSpacingExtra="@dimen/line_space_text" />
+    <TextView
+        style="@style/style_textview"
+        android:text="@string/multiple_content_p4"
+       android:lineSpacingExtra="@dimen/line_space_text"/>
+    <TextView
+        style="@style/style_textview"
+        android:textSize="@dimen/textsize_xxlarge"
+        android:text="@string/multiple_link"
+        android:textColor="@color/black_4"
+        android:id="@+id/tvLink"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/bg_subcategory"
+        android:layout_marginBottom="@dimen/dimen_1x"
+       />
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

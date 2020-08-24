@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/titleSubCategory"
+      android:textSize="@dimen/textsize_xxlarge"
+      android:textColor="@color/black"
+      android:ellipsize="marquee"
+      android:padding="@dimen/dimen_2x"
+      android:marqueeRepeatLimit="marquee_forever"
+      android:singleLine="true"
+      android:background="@drawable/bg_item_category_lv3lv4"/>
+</LinearLayout>
